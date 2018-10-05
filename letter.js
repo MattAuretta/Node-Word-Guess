@@ -18,10 +18,12 @@ function letter(character) {
         },
         this.checkGuess = function (x) {
             // A function that takes a character as an argument and checks it against the underlying character, updating the stored boolean value to true if it was guessed correctly
-            if(x == character){
-                this.correct = true
-                console.log("yes!")
+            if (x === character) {
+                this.correct = true;
+                console.log("yes!");
+                console.log(this);
             }
+            
         }
 }
 
